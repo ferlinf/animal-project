@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/isabelline"
+
+    tools:context=".BadakActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/sunset"
+        android:paddingTop="10dp">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp">
+
+                <ImageView
+                    android:id="@+id/arrowBackImageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:src="@drawable/baseline_arrow_back_24" />
+
+            </RelativeLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="200dp"
+        android:layout_height="500dp"
+        android:layout_marginLeft="100dp"
+        app:srcCompat="@drawable/badak" />
+
+    <TextView
+        android:id="@+id/badakpage3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView2"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="-118dp"
+        android:text="Badak"
+        android:textColor="@color/black"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/badakdesk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="30dp"
+        android:text="Badak adalah binatang besar yang punya kulit tebal seperti baju besi. Dia suka makan rumput dan daun-daunan. Badak punya tanduk yang bisa tajam, tapi dia baik-baik saja asal kita juga baik kepadanya. Dia suka tinggal di hutan dan savana. Jadi, badak itu seperti teman besar yang suka makan dan tinggal di tempat yang hijau!"
+       android:lineSpacingMultiplier="1.5"
+        android:textColor="@color/black"
+        android:layout_below="@id/badakpage3"/>
+
+
+    <Button
+        android:id="@+id/ytbadak"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pelajari lebih lanjut!"
+        android:textColor="@color/indigodye"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/badakdesk"/>
+
+
+</RelativeLayout>
