@@ -13,6 +13,30 @@
         android:theme="@style/Theme.ProjectAnimals"
         tools:targetApi="31">
         <activity
+            android:name=".HiuActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PausActivity"
+            android:exported="false" />
+        <activity
+            android:name=".kuraActivity"
+            android:exported="false" />
+        <activity
+            android:name=".NemoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".KepitingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LautActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MonyetActivity"
+            android:exported="false" />
+        <activity
+            android:name=".KoalaActivity"
+            android:exported="false" />
+        <activity
             android:name=".RawrActivity"
             android:exported="false" />
         <activity

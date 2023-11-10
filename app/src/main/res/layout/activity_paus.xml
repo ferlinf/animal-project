@@ -8,7 +8,7 @@
     android:orientation="vertical"
     android:background="@color/isabelline"
 
-    tools:context=".RawrActivity">
+    tools:context=".PausActivity">
 
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
@@ -41,47 +41,46 @@
     </com.google.android.material.appbar.AppBarLayout>
 
     <ImageView
-        android:id="@+id/tiger"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/toolbar"
-        app:srcCompat="@drawable/rawr" />
+        android:id="@+id/paus"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginLeft="50dp"
+        app:srcCompat="@drawable/paus" />
 
     <TextView
-        android:id="@+id/harimau"
+        android:id="@+id/pauspage3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/tiger"
+        android:layout_below="@id/paus"
         android:layout_marginLeft="50dp"
-        android:layout_marginTop="-118dp"
-        android:text="Harimau"
+        android:layout_marginTop="40dp"
+        android:text="Paus"
         android:textColor="@color/black"
         android:textSize="30dp" />
 
     <TextView
-        android:id="@+id/harimaudesk"
+        android:id="@+id/pausdesk"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="50dp"
         android:layout_marginRight="50dp"
         android:layout_marginTop="30dp"
-        android:text="Harimau itu seperti kucing besar dengan belang-belang keren. Dia suka bersembunyi di hutan dan punya cakar serta gigi tajam. Meskipun kelihatan menakutkan, harimau juga punya sisi lembut terutama kepada anak-anaknya. Jadi, harimau itu seperti pahlawan hutan yang kuat tapi baik hati!"
+        android:text="Paus itu adalah ikan super besar yang tinggal di laut. Dia lebih besar dari kapal-kapal bahkan! Paus punya moncong panjang yang disebut paruh dan lubang hidung besar yang disebut pembukaan blowhole di punggungnya. Saat paus keluar ke permukaan air, dia mengeluarkan semburan air dan udara dari blowhole-nya. Paus suka berenang dan melompat keluar air, seperti pertunjukan yang keren di laut! Jadi, paus itu seperti raja laut yang super besar dan hebat!"
         android:lineSpacingMultiplier="1.5"
         android:textColor="@color/black"
-        android:layout_below="@id/harimau"/>
+        android:layout_below="@id/pauspage3"/>
 
 
     <Button
-        android:id="@+id/ytharimau"
+        android:id="@+id/ytpaus"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Pelajari lebih lanjut!"
         android:textColor="@color/indigodye"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
-        android:layout_below="@id/harimaudesk"/>
-
-
+        android:layout_below="@id/pausdesk"/>
 
 
 </RelativeLayout>

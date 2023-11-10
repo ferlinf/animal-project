@@ -8,7 +8,7 @@
     android:orientation="vertical"
     android:background="@color/isabelline"
 
-    tools:context=".RawrActivity">
+    tools:context=".kuraActivity">
 
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
@@ -41,47 +41,46 @@
     </com.google.android.material.appbar.AppBarLayout>
 
     <ImageView
-        android:id="@+id/tiger"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/toolbar"
-        app:srcCompat="@drawable/rawr" />
+        android:id="@+id/kura"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginLeft="50dp"
+        app:srcCompat="@drawable/kura" />
 
     <TextView
-        android:id="@+id/harimau"
+        android:id="@+id/kurapage3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/tiger"
+        android:layout_below="@id/kura"
         android:layout_marginLeft="50dp"
-        android:layout_marginTop="-118dp"
-        android:text="Harimau"
+        android:layout_marginTop="40dp"
+        android:text="Kura"
         android:textColor="@color/black"
         android:textSize="30dp" />
 
     <TextView
-        android:id="@+id/harimaudesk"
+        android:id="@+id/kuradesk"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="50dp"
         android:layout_marginRight="50dp"
         android:layout_marginTop="30dp"
-        android:text="Harimau itu seperti kucing besar dengan belang-belang keren. Dia suka bersembunyi di hutan dan punya cakar serta gigi tajam. Meskipun kelihatan menakutkan, harimau juga punya sisi lembut terutama kepada anak-anaknya. Jadi, harimau itu seperti pahlawan hutan yang kuat tapi baik hati!"
+        android:text="Kura-kura itu seperti kura-kura kecil yang hidup di darat dan air. Dia punya rumah di punggungnya yang disebut karapas, seperti rumah berjalan! Kura-kura suka berjalan pelan-pelan, dan kadang-kadang dia bisa masuk ke dalam karapasnya untuk bersembunyi. Dia juga suka berenang di air. Kura-kura suka makan sayuran dan serangga. Jadi, kura-kura itu seperti teman kecil yang suka berjalan dan berenang, dan punya rumah bergerak!"
         android:lineSpacingMultiplier="1.5"
         android:textColor="@color/black"
-        android:layout_below="@id/harimau"/>
+        android:layout_below="@id/kurapage3"/>
 
 
     <Button
-        android:id="@+id/ytharimau"
+        android:id="@+id/ytkura"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Pelajari lebih lanjut!"
         android:textColor="@color/indigodye"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
-        android:layout_below="@id/harimaudesk"/>
-
-
+        android:layout_below="@id/kuradesk"/>
 
 
 </RelativeLayout>
