@@ -79,7 +79,8 @@
         android:textColor="@color/indigodye"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
-        android:layout_below="@id/koaladesk"/>
+        android:layout_below="@id/koaladesk"
+        android:onClick="videoKoala"/>
 
 
 </RelativeLayout>

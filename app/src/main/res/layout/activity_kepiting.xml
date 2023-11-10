@@ -80,7 +80,8 @@
         android:textColor="@color/indigodye"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
-        android:layout_below="@id/kepitingdesk"/>
+        android:layout_below="@id/kepitingdesk"
+        android:onClick="videoKepiting"/>
 
 
 </RelativeLayout>

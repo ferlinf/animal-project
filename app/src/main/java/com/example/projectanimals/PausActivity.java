@@ -2,7 +2,9 @@ package com.example.projectanimals;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.ActivityNotFoundException;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
@@ -22,5 +24,17 @@ public class PausActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+    }
+
+    public void videoPaus(View view) {
+        String videoId = "https://youtu.be/bgiPTUy2RqI?si=6NAdIibxJlHKDuqG";
+        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("vnd.youtube"+videoId));
+        intent.putExtra("VIDEO_ID", videoId);
+        try {
+            startActivity(intent);
+        } catch (ActivityNotFoundException e) {
+            intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://youtu.be/bgiPTUy2RqI?si=6NAdIibxJlHKDuqG" + videoId));
+            startActivity(intent);
+        }
     }
 }

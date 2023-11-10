@@ -27,6 +27,7 @@
         android:textSize="19sp"
         android:textStyle="bold" />
 
+
     <EditText
         android:id="@+id/nama"
         android:layout_width="wrap_content"
@@ -36,7 +37,7 @@
         android:hint="Tulis namamu ya!"
         android:layout_below="@id/judul"
         android:layout_centerHorizontal="true" />
-    
+
     <EditText
         android:id="@+id/umur"
         android:layout_width="wrap_content"

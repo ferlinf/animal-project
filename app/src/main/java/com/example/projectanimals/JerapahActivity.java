@@ -2,7 +2,9 @@ package com.example.projectanimals;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.ActivityNotFoundException;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
@@ -24,5 +26,17 @@ public class JerapahActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+    }
+
+    public void videoJerapah(View view) {
+        String videoId = "https://youtu.be/P_ckAbOr0r4?si=cdrPEaNgL4QEGuWU";
+        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("vnd.youtube" + videoId));
+        intent.putExtra("VIDEO_ID", videoId);
+        try {
+            startActivity(intent);
+        } catch (ActivityNotFoundException e) {
+            intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://youtu.be/P_ckAbOr0r4?si=cdrPEaNgL4QEGuWU" + videoId));
+            startActivity(intent);
+        }
     }
 }
