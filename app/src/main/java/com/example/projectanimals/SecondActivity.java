@@ -36,4 +36,14 @@ public class SecondActivity extends AppCompatActivity {
         Intent intent = new Intent(this,RawrActivity.class);
         startActivity(intent);
     }
+
+    public void koala(View view) {
+        Intent intent = new Intent(this,KoalaActivity.class);
+        startActivity(intent);
+    }
+
+    public void monyet(View view) {
+        Intent intent = new Intent(this,MonyetActivity.class);
+        startActivity(intent);
+    }
 }

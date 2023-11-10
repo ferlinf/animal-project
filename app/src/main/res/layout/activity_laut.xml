@@ -37,7 +37,7 @@
             android:background="@drawable/rounded_button"
             android:layout_below="@id/nama"
             android:layout_alignParentRight="true"
-            android:onClick="badak"/>
+            android:onClick="kepiting"/>
         <Button
             android:id="@+id/nemobutton"
             android:layout_width="250dp"
@@ -50,7 +50,7 @@
             android:layout_below="@id/kepitingbutton"
             android:layout_alignParentRight="true"
             android:background="@drawable/rounded_button"
-            android:onClick="jerapah"/>
+            android:onClick="nemo"/>
         <Button
             android:id="@+id/kurabutton"
             android:layout_width="250dp"
@@ -63,7 +63,7 @@
             android:layout_below="@id/nemobutton"
             android:layout_alignParentRight="true"
             android:background="@drawable/rounded_button"
-            android:onClick="rawr"/>
+            android:onClick="kura"/>
         <Button
             android:id="@+id/pausbutton"
             android:layout_width="250dp"
@@ -76,7 +76,7 @@
             android:layout_below="@id/kurabutton"
             android:layout_alignParentRight="true"
             android:background="@drawable/rounded_button"
-            android:onClick="koala"/>
+            android:onClick="paus"/>
         <Button
             android:id="@+id/hiubutton"
             android:layout_width="250dp"
@@ -89,7 +89,7 @@
             android:layout_below="@id/pausbutton"
             android:layout_alignParentRight="true"
             android:background="@drawable/rounded_button"
-            android:onClick="monyet"/>
+            android:onClick="hiu"/>
 
         <ImageView
             android:id="@+id/kepiting"
