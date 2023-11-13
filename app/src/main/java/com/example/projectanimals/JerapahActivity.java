@@ -23,6 +23,8 @@ public class JerapahActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(JerapahActivity.this, HomeActivity.class);
+                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_SINGLE_TOP);
+                intent.putExtra("SELECTED_TAB", "DaratFragment");
                 startActivity(intent);
             }
         });
