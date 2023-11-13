@@ -41,6 +41,11 @@ public class MainActivity extends AppCompatActivity {
             return;
         }
 
+        if (containsDigit(namaString)) {
+            showToast("Nama tidak boleh mengandung angka");
+            return;
+        }
+
         if (umurString.isEmpty()) {
             showToast("isi umur kamu dulu ya");
             return;
@@ -59,6 +64,7 @@ public class MainActivity extends AppCompatActivity {
             return;
         }
 
+
         RadioButton selectedRadioButton = findViewById(selectedRadioButtonId);
         String selectedAnimal = selectedRadioButton.getText().toString();
 
@@ -69,6 +75,14 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
 
         }
+    private boolean containsDigit(String str) {
+        for (char c : str.toCharArray()) {
+            if (Character.isDigit(c)) {
+                return true;
+            }
+        }
+        return false;
+    }
     private void showToast(String message) {
         Toast.makeText(this, message, Toast.LENGTH_SHORT).show();
     }

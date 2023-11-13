@@ -20,7 +20,7 @@ public class kuraActivity extends AppCompatActivity {
         arrowBackImageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(kuraActivity.this, LautActivity.class);
+                Intent intent = new Intent(kuraActivity.this,HomeActivity.class);
                 startActivity(intent);
             }
         });

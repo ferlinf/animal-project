@@ -21,7 +21,7 @@ public class MonyetActivity extends AppCompatActivity {
         arrowBackImageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MonyetActivity.this, SecondActivity.class);
+                Intent intent = new Intent(MonyetActivity.this, HomeActivity.class);
                 startActivity(intent);
             }
         });

@@ -21,7 +21,7 @@ ImageView arrowBackImageView;
         arrowBackImageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(BadakActivity.this, SecondActivity.class);
+                Intent intent = new Intent(BadakActivity.this, HomeActivity.class);
                 startActivity(intent);
             }
         });

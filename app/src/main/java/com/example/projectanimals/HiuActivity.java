@@ -20,7 +20,7 @@ public class HiuActivity extends AppCompatActivity {
         arrowBackImageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(HiuActivity.this, LautActivity.class);
+                Intent intent = new Intent(HiuActivity.this, HomeActivity.class);
                 startActivity(intent);
             }
         });

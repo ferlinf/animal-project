@@ -36,17 +36,18 @@
         android:inputType="text"
         android:hint="Tulis namamu ya!"
         android:layout_below="@id/judul"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"/>
 
     <EditText
         android:id="@+id/umur"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:inputType="text"
+        android:inputType="number"
         android:hint="Berapa umurmu?"
         android:layout_below="@id/nama"
-        android:layout_centerHorizontal="true"/>
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp" />
 
     <RadioGroup
         android:id="@+id/group_Radio"

@@ -22,7 +22,7 @@ public class JerapahActivity extends AppCompatActivity {
         arrowBackImageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(JerapahActivity.this, SecondActivity.class);
+                Intent intent = new Intent(JerapahActivity.this, HomeActivity.class);
                 startActivity(intent);
             }
         });
