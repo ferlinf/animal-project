@@ -62,7 +62,7 @@ public class MainActivity extends AppCompatActivity {
         RadioButton selectedRadioButton = findViewById(selectedRadioButtonId);
         String selectedAnimal = selectedRadioButton.getText().toString();
 
-        Intent intent = new Intent(this, LautActivity.class);
+        Intent intent = new Intent(this, HomeActivity.class);
         String message = editText1.getText().toString();
         intent.putExtra("EXTRA_MESSAGE", message);
         intent.putExtra("EXTRA_ANIMAL", selectedRadioButtonId);

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LautFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/kepitingbutton"
+            android:layout_width="250dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="50dp"
+            android:layout_gravity="end"
+            android:text="Kepiting"
+            android:textSize="30dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/rounded_button"
+            android:layout_below="@id/nama"
+            android:layout_alignParentRight="true"
+            android:onClick="kepiting"/>
+        <Button
+            android:id="@+id/nemobutton"
+            android:layout_width="250dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="50dp"
+            android:layout_gravity="end"
+            android:text="Ikan Nemo"
+            android:textSize="30dp"
+            android:layout_marginRight="20dp"
+            android:layout_below="@id/kepitingbutton"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/rounded_button"
+            android:onClick="nemo"/>
+        <Button
+            android:id="@+id/kurabutton"
+            android:layout_width="250dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="50dp"
+            android:layout_gravity="end"
+            android:text="Kura-kura"
+            android:textSize="30dp"
+            android:layout_marginRight="20dp"
+            android:layout_below="@id/nemobutton"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/rounded_button"
+            android:onClick="kura"/>
+        <Button
+            android:id="@+id/pausbutton"
+            android:layout_width="250dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="50dp"
+            android:layout_gravity="end"
+            android:text="paus"
+            android:textSize="30dp"
+            android:layout_marginRight="20dp"
+            android:layout_below="@id/kurabutton"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/rounded_button"
+            android:onClick="paus"/>
+        <Button
+            android:id="@+id/hiubutton"
+            android:layout_width="250dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="end"
+            android:text="Hiu"
+            android:textSize="30dp"
+            android:layout_marginRight="20dp"
+            android:layout_below="@id/pausbutton"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/rounded_button"
+            android:onClick="hiu"/>
+
+        <ImageView
+            android:id="@+id/kepiting"
+            android:layout_width="300dp"
+            android:layout_height="180dp"
+            android:layout_below="@id/nama"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="12dp"
+            android:layout_toLeftOf="@id/kepitingbutton"
+            app:srcCompat="@drawable/kepiting" />
+
+        <ImageView
+            android:id="@+id/nemo"
+            android:layout_width="130dp"
+            android:layout_height="167dp"
+            android:layout_below="@id/kepiting"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="30dp"
+            app:srcCompat="@drawable/nemo" />
+
+        <ImageView
+            android:id="@+id/kura"
+            android:layout_width="120dp"
+            android:layout_height="110dp"
+            android:layout_below="@id/nemo"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginBottom="50dp"
+            app:srcCompat="@drawable/kura" />
+
+        <ImageView
+            android:id="@+id/paus"
+            android:layout_width="140dp"
+            android:layout_height="170dp"
+            android:layout_below="@id/kura"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            app:srcCompat="@drawable/paus" />
+
+        <ImageView
+            android:id="@+id/hiu"
+            android:layout_width="125dp"
+            android:layout_height="165dp"
+            android:layout_below="@id/paus"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="40dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            app:srcCompat="@drawable/hiu" />
+
+
+    </RelativeLayout>
+
+
+</ScrollView>
