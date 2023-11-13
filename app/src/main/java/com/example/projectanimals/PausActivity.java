@@ -20,7 +20,7 @@ public class PausActivity extends AppCompatActivity {
         arrowBackImageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(PausActivity.this, LautActivity.class);
+                Intent intent = new Intent(PausActivity.this, HomeActivity.class);
                 startActivity(intent);
             }
         });

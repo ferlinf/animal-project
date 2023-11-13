@@ -20,7 +20,7 @@ public class NemoActivity extends AppCompatActivity {
         arrowBackImageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(NemoActivity.this, LautActivity.class);
+                Intent intent = new Intent(NemoActivity.this,HomeActivity.class);
                 startActivity(intent);
             }
         });

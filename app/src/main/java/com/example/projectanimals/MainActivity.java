@@ -41,6 +41,11 @@ public class MainActivity extends AppCompatActivity {
             return;
         }
 
+        if (containsDigit(namaString)) {
+            showToast("Nama tidak boleh mengandung angka");
+            return;
+        }
+
         if (umurString.isEmpty()) {
             showToast("isi umur kamu dulu ya");
             return;
@@ -59,16 +64,25 @@ public class MainActivity extends AppCompatActivity {
             return;
         }
 
+
         RadioButton selectedRadioButton = findViewById(selectedRadioButtonId);
         String selectedAnimal = selectedRadioButton.getText().toString();
 
-        Intent intent = new Intent(this, LautActivity.class);
+        Intent intent = new Intent(this, HomeActivity.class);
         String message = editText1.getText().toString();
         intent.putExtra("EXTRA_MESSAGE", message);
         intent.putExtra("EXTRA_ANIMAL", selectedRadioButtonId);
         startActivity(intent);
 
         }
+    private boolean containsDigit(String str) {
+        for (char c : str.toCharArray()) {
+            if (Character.isDigit(c)) {
+                return true;
+            }
+        }
+        return false;
+    }
     private void showToast(String message) {
         Toast.makeText(this, message, Toast.LENGTH_SHORT).show();
     }

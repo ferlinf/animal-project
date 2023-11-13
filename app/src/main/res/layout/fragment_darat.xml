@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DaratFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/badak"
+            android:layout_width="250dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="50dp"
+            android:layout_gravity="end"
+            android:text="Badak"
+            android:textSize="30dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/rounded_button"
+            android:layout_below="@id/tabLayout"
+            android:layout_alignParentRight="true"
+            android:onClick="badak"/>
+        <Button
+            android:id="@+id/jerapah"
+            android:layout_width="250dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="50dp"
+            android:layout_gravity="end"
+            android:text="Jerapah"
+            android:textSize="30dp"
+            android:layout_marginRight="20dp"
+            android:layout_below="@id/badak"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/rounded_button"
+            android:onClick="jerapah"/>
+        <Button
+            android:id="@+id/rawr"
+            android:layout_width="250dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="50dp"
+            android:layout_gravity="end"
+            android:text="Harimau"
+            android:textSize="30dp"
+            android:layout_marginRight="20dp"
+            android:layout_below="@id/jerapah"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/rounded_button"
+            android:onClick="rawr"/>
+        <Button
+            android:id="@+id/koala"
+            android:layout_width="250dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="50dp"
+            android:layout_gravity="end"
+            android:text="koala"
+            android:textSize="30dp"
+            android:layout_marginRight="20dp"
+            android:layout_below="@id/rawr"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/rounded_button"
+            android:onClick="koala"/>
+        <Button
+            android:id="@+id/monyet"
+            android:layout_width="250dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="end"
+            android:text="monyet"
+            android:textSize="30dp"
+            android:layout_marginRight="20dp"
+            android:layout_below="@id/koala"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/rounded_button"
+            android:onClick="monyet"/>
+
+        <ImageView
+            android:id="@+id/bdk"
+            android:layout_width="138dp"
+            android:layout_height="167dp"
+            android:layout_below="@id/nama"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginBottom="20dp"
+            android:layout_toLeftOf="@id/badak"
+            app:srcCompat="@drawable/badak" />
+
+        <ImageView
+            android:id="@+id/giraffe"
+            android:layout_width="138dp"
+            android:layout_height="167dp"
+            android:layout_below="@id/bdk"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="-6dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            app:srcCompat="@drawable/jerapah" />
+
+        <ImageView
+            android:id="@+id/tiger"
+            android:layout_width="138dp"
+            android:layout_height="167dp"
+            android:layout_below="@id/giraffe"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            app:srcCompat="@drawable/rawr" />
+
+        <ImageView
+            android:id="@+id/koala"
+            android:layout_width="140dp"
+            android:layout_height="170dp"
+            android:layout_below="@id/tiger"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            app:srcCompat="@drawable/koala" />
+
+        <ImageView
+            android:id="@+id/monkey"
+            android:layout_width="130dp"
+            android:layout_height="165dp"
+            android:layout_below="@id/koala"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            app:srcCompat="@drawable/monyet" />
+
+
+    </RelativeLayout>
+</ScrollView>
