@@ -16,24 +16,33 @@ public class NemoActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_nemo);
 
-        ImageView arrowBackImageView = findViewById(R.id.arrowBackImageView);
+        arrowBackImageView = findViewById(R.id.arrowBackImageView);
         arrowBackImageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(NemoActivity.this,HomeActivity.class);
+                // Create an intent to go back to HomeActivity
+                Intent intent = new Intent(NemoActivity.this, HomeActivity.class);
+
+                // Add flags to clear the back stack and start a new instance of HomeActivity
+                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_SINGLE_TOP);
+
+                // Add an extra to indicate that you want to select the LautFragment
+                intent.putExtra("SELECTED_TAB", "LautFragment");
+
+                // Start the intent
                 startActivity(intent);
             }
         });
     }
 
     public void videoNemo(View view) {
-        String videoId = "https://youtu.be/rn6R4ncd2OU?si=CMA58HJ_2pHP0rjA";
+        String videoId = "rn6R4ncd2OU";
         Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("vnd.youtube"+videoId));
         intent.putExtra("VIDEO_ID", videoId);
         try {
             startActivity(intent);
         } catch (ActivityNotFoundException e) {
-            intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://youtu.be/rn6R4ncd2OU?si=CMA58HJ_2pHP0rjA" + videoId));
+            intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://youtu.be/" + videoId));
             startActivity(intent);
         }
     }

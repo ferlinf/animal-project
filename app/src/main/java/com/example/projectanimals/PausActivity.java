@@ -16,11 +16,20 @@ public class PausActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_paus);
 
-        ImageView arrowBackImageView = findViewById(R.id.arrowBackImageView);
+        arrowBackImageView = findViewById(R.id.arrowBackImageView);
         arrowBackImageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                // Create an intent to go back to HomeActivity
                 Intent intent = new Intent(PausActivity.this, HomeActivity.class);
+
+                // Add flags to clear the back stack and start a new instance of HomeActivity
+                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_SINGLE_TOP);
+
+                // Add an extra to indicate that you want to select the LautFragment
+                intent.putExtra("SELECTED_TAB", "LautFragment");
+
+                // Start the intent
                 startActivity(intent);
             }
         });
