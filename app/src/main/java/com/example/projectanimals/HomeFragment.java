@@ -1,5 +1,6 @@
 package com.example.projectanimals;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -7,6 +8,7 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -55,10 +57,27 @@ public class HomeFragment extends Fragment {
         }
     }
 
+    TextView nama;
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_home, container, false);
+        View view = inflater.inflate(R.layout.fragment_home, container, false);
+
+        // Mendapatkan referensi ke TextView di dalam tata letak fragment
+        TextView textView = view.findViewById(R.id.nama); // Gantilah "R.id.nama" sesuai dengan ID TextView Anda
+
+        // Mengambil data dari Intent yang dikirim
+        if (getArguments() != null) {
+            String message = getArguments().getString("EXTRA_MESSAGE");
+
+            // Menetapkan teks TextView dengan pesan
+            if (message != null) {
+                textView.setText("Halo " + message);
+            }
+        }
+
+        return view;
     }
 }
