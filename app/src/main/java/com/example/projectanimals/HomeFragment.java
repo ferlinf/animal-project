@@ -2,6 +2,7 @@ package com.example.projectanimals;
 
 import android.content.Intent;
 import android.os.Bundle;
+import androidx.annotation.NonNull;
 
 import androidx.fragment.app.Fragment;
 
@@ -25,6 +26,7 @@ public class HomeFragment extends Fragment {
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
+
 
     public HomeFragment() {
         // Required empty public constructor
@@ -62,22 +64,20 @@ public class HomeFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_home, container, false);
+        TextView textView = view.findViewById(R.id.nama);
 
-        // Mendapatkan referensi ke TextView di dalam tata letak fragment
-        TextView textView = view.findViewById(R.id.nama); // Gantilah "R.id.nama" sesuai dengan ID TextView Anda
-
-        // Mengambil data dari Intent yang dikirim
         if (getArguments() != null) {
             String message = getArguments().getString("EXTRA_MESSAGE");
 
-            // Menetapkan teks TextView dengan pesan
             if (message != null) {
                 textView.setText("Halo " + message);
+            } else {
+                textView.setText("Halo sayang");
             }
         }
 
         return view;
     }
+
 }

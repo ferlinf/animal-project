@@ -9,4 +9,20 @@
     <color name="indigodye">#184E77</color>
     <color name="isabelline">#EDEDE9</color>
     <color name="green">#A3B763</color>
+    <color name="peach">#ffe6a7</color>
+    <color name="bistre">#432818</color>
+    <color name="peach2">#FEC89A</color>
+    <color name="battleshipgray">#8a817c</color>
+    <color name="Linen">#f5ebe0</color>
+    <color name="dun">#E6CCB2</color>
+    <color name="chamoise">#B08968</color>
+    <color name="apricot">#FED0BB</color>
+    <color name="cordovan">#8C2F39</color>
+    <color name="bittersweet">#e26d5c</color>
+    <color name="emerald">#76C893</color>
+    <color name="lightcyan">#CAF0F8</color>
+    <color name="prusianblue">#023047</color>
+   <color name="oxfordblue">#001233</color>
+    <color name="paynegrey">#5C677D</color>
+    <color name="whiteBone">#F9F6EE</color>
 </resources>

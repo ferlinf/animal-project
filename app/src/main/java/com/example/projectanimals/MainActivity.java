@@ -20,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
     EditText nama;
 
     RadioGroup radioGroup;
+    public static final String EXTRA_MESSAGE = "EXTRA_MESSAGE";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -68,9 +69,9 @@ public class MainActivity extends AppCompatActivity {
         RadioButton selectedRadioButton = findViewById(selectedRadioButtonId);
         String selectedAnimal = selectedRadioButton.getText().toString();
 
-        Intent intent = new Intent(this, HomeActivity.class);
+        Intent intent = new Intent(this, HomeFragment.class);
         String message = editText1.getText().toString();
-        intent.putExtra("EXTRA_MESSAGE", message);
+        intent.putExtra(EXTRA_MESSAGE, message);
         intent.putExtra("EXTRA_ANIMAL", selectedRadioButtonId);
         startActivity(intent);
 

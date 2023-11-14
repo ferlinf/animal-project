@@ -13,7 +13,7 @@
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/sunset"
+        android:background="@color/oxfordblue"
         android:paddingTop="10dp">
 
         <androidx.appcompat.widget.Toolbar
@@ -77,7 +77,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Pelajari lebih lanjut!"
-        android:textColor="@color/indigodye"
+        android:backgroundTint="@color/oxfordblue"
+        android:textColor="@color/white"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
         android:layout_below="@id/hiudesk"
